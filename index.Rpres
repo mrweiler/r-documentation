@@ -11,14 +11,23 @@ Folien online
 https://mrweiler.github.io/r-documentation
 
 
+Coding style
+========================================================
+
+
+Tidyverse style guide
+========================================================
+
+
 Links
 ========================================================
 
 - [The tidyverse style guide]
   (http://style.tidyverse.org/)  
-- [Static code analysis for R]
-  (https://cran.r-project.org/web/packages/lintr/README.html)  
 - [Non-invasive pretty-printing of R source code]
   (http://styler.r-lib.org/)
+- [Static code analysis for R]
+  (https://cran.r-project.org/web/packages/lintr/README.html)  
 - [R Markdown: The Definitive Guide]
   (https://bookdown.org/yihui/rmarkdown/)
+  
