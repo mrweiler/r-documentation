@@ -934,7 +934,118 @@ ortalama &lt;- toplam / sayı
 
 </section>
 <section data-transition="concave" data-transition-speed="default">
+<h3>Fragen?</h3>
+<div class="slideContent" >
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
 <h3>R Markdown</h3>
+<div class="slideContent" >
+<ul>
+<li>Auszeichnungssprache zur Erstellung von Dokumenten </li>
+<li><a href="https://rmarkdown.rstudio.com/">R Markdown Übersicht</a></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Übung</h3>
+<div class="slideContent" >
+<ul>
+<li>Erstellt in RStudio ein R Markdown Dokument</li>
+<li>Speichert es ab unter ugly_code.Rmd</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>R Markdown Basics</h3>
+<div class="slideContent" >
+<ul>
+<li><a href="https://rmarkdown.rstudio.com/authoring_basics.html">R Markdown Basics</a></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Übung</h3>
+<div class="slideContent" >
+<p>Ergänzt das soeben erstellte R Markdown Dokument um:</p>
+
+<ul>
+<li>eine Überschrift Größe 2</li>
+<li>eine kurze Beschreibung eures Code-Abschnitts<br/>
+(oder eines Ausschnitts)</li>
+<li>einem Ausschnitt eures R Codes</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Tipp</h3>
+<div class="slideContent" >
+<p><strong>Don&#39;t repeat yourself aka DRY-Prinzip</strong></p>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Externer R Code in R Markdown Dokument I</h3>
+<div class="slideContent" >
+<ul>
+<li><strong>Im R Skript:</strong> Label ergänzen</li>
+</ul>
+
+<pre><code class="r">## ---- my label ----
+ugly_sum &lt;- 100
+ugly_count &lt;- 10
+ugly_mean &lt;- ugly_sum / ugly_count
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Externer R Code in R Markdown Dokument II</h3>
+<div class="slideContent" >
+<ul>
+<li><strong>Im R Markdown Dokument:</strong> R Skript einlesen mit read_chunk()</li>
+</ul>
+
+<pre><code class="r">knitr::read_chunk(&quot;ugly_code.R&quot;)
+</code></pre>
+
+<ul>
+<li><strong>Im R Markdown Dokument:</strong> r label aufrufen</li>
+</ul>
+
+<pre><code class="r">ugly_sum &lt;- 100
+ugly_count &lt;- 10
+ugly_mean &lt;- ugly_sum / ugly_count
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Übung</h3>
+<div class="slideContent" >
+<ul>
+<li>Bindet einen Abschnitt eures R Codes in eurem<br/>
+R Markdown Dokument ein</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Fragen?</h3>
 <div class="slideContent" >
 
 </div>
@@ -947,6 +1058,8 @@ ortalama &lt;- toplam / sayı
 <li><a href="http://style.tidyverse.org/">The tidyverse style guide</a><br/></li>
 <li><a href="http://styler.r-lib.org/">Non-invasive pretty-printing of R source code</a></li>
 <li><a href="https://cran.r-project.org/web/packages/lintr/README.html">Static code analysis for R</a><br/></li>
+<li><a href="https://rmarkdown.rstudio.com/">R Markdown Übersicht</a></li>
+<li><a href="https://rmarkdown.rstudio.com/authoring_basics.html">R Markdown Basics</a></li>
 <li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a></li>
 </ul>
 

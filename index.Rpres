@@ -101,7 +101,73 @@ styler::style_file("ugly_code.R")
 - Nutzt dazu ebenfalls das styler-Addin
 
 
+Fragen?
+========================================================
+
+
 R Markdown
+========================================================
+- Auszeichnungssprache zur Erstellung von Dokumenten 
+- [R Markdown Übersicht]  
+  (https://rmarkdown.rstudio.com/)
+
+
+Übung
+========================================================
+- Erstellt in RStudio ein R Markdown Dokument
+- Speichert es ab unter ugly_code.Rmd
+
+
+R Markdown Basics
+========================================================
+- [R Markdown Basics]
+  (https://rmarkdown.rstudio.com/authoring_basics.html)
+  
+
+Übung
+========================================================
+Ergänzt das soeben erstellte R Markdown Dokument um:
+- eine Überschrift Größe 2
+- eine kurze Beschreibung eures Code-Abschnitts  
+  (oder eines Ausschnitts)
+- einem Ausschnitt eures R Codes
+
+
+Tipp
+========================================================
+__Don't repeat yourself aka DRY-Prinzip__
+
+
+Externer R Code in R Markdown Dokument I
+========================================================
+- __Im R Skript:__ Label ergänzen
+```{r eval=FALSE}
+## ---- my label ----
+ugly_sum <- 100
+ugly_count <- 10
+ugly_mean <- ugly_sum / ugly_count
+```
+
+
+Externer R Code in R Markdown Dokument II
+========================================================
+- __Im R Markdown Dokument:__ R Skript einlesen mit read_chunk()
+```{r}
+knitr::read_chunk("ugly_code.R")
+```
+
+- __Im R Markdown Dokument:__ r label aufrufen
+```{r my label}
+```
+
+
+Übung
+========================================================
+- Bindet einen Abschnitt eures R Codes in eurem  
+  R Markdown Dokument ein
+
+
+Fragen?
 ========================================================
 
 
@@ -114,6 +180,10 @@ Links
   (http://styler.r-lib.org/)
 - [Static code analysis for R]
   (https://cran.r-project.org/web/packages/lintr/README.html)  
+- [R Markdown Übersicht]  
+  (https://rmarkdown.rstudio.com/)
+- [R Markdown Basics]
+  (https://rmarkdown.rstudio.com/authoring_basics.html)
 - [R Markdown: The Definitive Guide]
   (https://bookdown.org/yihui/rmarkdown/)
   

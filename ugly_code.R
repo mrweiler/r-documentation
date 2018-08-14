@@ -6,3 +6,7 @@ Anzahl = length(Zahlen)
 Summe = sum(Zahlen)
 # ---- compute mean ----
 Mittelwert = Summe/Anzahl
+## ---- my label ----
+ugly_sum <- 100
+ugly_count <- 10
+ugly_mean <- ugly_sum / ugly_count
