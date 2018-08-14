@@ -800,8 +800,87 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="concave" data-transition-speed="default">
-<h3>Coding style</h3>
+<h3>Vorbereitungen für heute</h3>
 <div class="slideContent" >
+<ul>
+<li>Installiert die beiden Pakete &ldquo;lintr&rdquo; und &ldquo;styler&rdquo;</li>
+<li>sowie R und RStudio</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Übung</h3>
+<div class="slideContent" >
+<ul>
+<li>Sucht euch 100 Zeilen R-Code und speichert diesen<br/>
+unter dem Namen <code>ugly_code.R</code> ab</li>
+<li>Bevorzugt: eigener Code</li>
+<li>Alternativ: Google-Suche nach &ldquo;ugly r code&rdquo;</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Ziele für heute</h3>
+<div class="slideContent" >
+<ul>
+<li>Lesbarkeit von Code erhöhen</li>
+<li>Bereitschaft erhöhen eigenen<br/>
+Code mit anderen zu teilen</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Lesbarkeit erhöhen</h3>
+<div class="slideContent" >
+<ul>
+<li>Auswahl der Sprache (für Code und Kommentare)</li>
+<li>Konventionen befolgen (coding style)</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Englisch oder nicht?</h3>
+<div class="slideContent" >
+<p>Was macht dieser Code?</p>
+
+<pre><code class="r"># Najpierw oblicz średnią
+ortalama &lt;- toplam / sayı
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Übung</h3>
+<div class="slideContent" >
+<ul>
+<li>Ist euer Code in ugly_code.R auf Englisch verfasst?</li>
+<li>&hellip; und kommentiert?</li>
+<li>Seht ihr dabei Schwierigkeiten?</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Konventionen (Übersicht)</h3>
+<div class="slideContent" >
+<ul>
+<li>Variablennamen</li>
+<li>Leerzeichen</li>
+<li>Zeilenlänge</li>
+<li>Einrückung</li>
+<li>Zuweisung</li>
+<li>&hellip;</li>
+</ul>
 
 </div>
 
@@ -809,26 +888,53 @@ hljs.initHighlightingOnLoad();
 <section data-transition="concave" data-transition-speed="default">
 <h3>Tidyverse style guide</h3>
 <div class="slideContent" >
+<p><a href="http://style.tidyverse.org/">http://style.tidyverse.org/</a></p>
 
 </div>
 
 </section>
 <section data-transition="concave" data-transition-speed="default">
-<h3>&quot;Autostyle&quot; mit styler</h3>
+<h3>Style-Fehler suchen mit dem &quot;lintr&quot; Paket</h3>
 <div class="slideContent" >
+<pre><code class="r">lintr::lint(&quot;ugly_code.R&quot;)
+</code></pre>
 
 </div>
 
 </section>
 <section data-transition="concave" data-transition-speed="default">
-<h3>Statische Code Analyse</h3>
+<h3>Übung</h3>
 <div class="slideContent" >
+<ul>
+<li>Überprüft euren Code</li>
+<li>Versteht ihr die Rückmeldungen von lintr?</li>
+</ul>
 
 </div>
 
 </section>
 <section data-transition="concave" data-transition-speed="default">
-<h3>lintr</h3>
+<h3>Auto-Style mit dem &quot;styler&quot; Paket</h3>
+<div class="slideContent" >
+<pre><code class="r">styler::style_file(&quot;ugly_code.R&quot;)
+</code></pre>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>Übung</h3>
+<div class="slideContent" >
+<ul>
+<li>Verpasst eurem Code einen freshen Style</li>
+<li>Nutzt dazu ebenfalls das styler-Addin</li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="concave" data-transition-speed="default">
+<h3>R Markdown</h3>
 <div class="slideContent" >
 
 </div>

@@ -11,23 +11,100 @@ Folien online
 https://mrweiler.github.io/r-documentation
 
 
-Coding style
+Vorbereitungen für heute
 ========================================================
+
+- Installiert die beiden Pakete "lintr" und "styler"
+- sowie R und RStudio
+
+
+Übung
+========================================================
+- Sucht euch 100 Zeilen R-Code und speichert diesen  
+  unter dem Namen ```ugly_code.R``` ab
+- Bevorzugt: eigener Code
+- Alternativ: Google-Suche nach "ugly r code"
+
+
+Ziele für heute
+========================================================
+
+- Lesbarkeit von Code erhöhen
+- Bereitschaft erhöhen eigenen  
+  Code mit anderen zu teilen
+
+
+Lesbarkeit erhöhen
+========================================================
+
+- Auswahl der Sprache (für Code und Kommentare)
+- Konventionen befolgen (coding style)
+
+
+Englisch oder nicht?
+========================================================
+
+Was macht dieser Code?
+
+
+```r
+# Najpierw oblicz średnią
+ortalama <- toplam / sayı
+```
+
+
+Übung
+========================================================
+- Ist euer Code in ugly_code.R auf Englisch verfasst?
+- ... und kommentiert?
+- Seht ihr dabei Schwierigkeiten?
+
+
+Konventionen (Übersicht)
+========================================================
+- Variablennamen
+- Leerzeichen
+- Zeilenlänge
+- Einrückung
+- Zuweisung
+- ...
 
 
 Tidyverse style guide
 ========================================================
 
+http://style.tidyverse.org/
 
-"Autostyle" mit styler
+
+Style-Fehler suchen mit dem "lintr" Paket
 ========================================================
 
+```r
+lintr::lint("ugly_code.R")
+```
 
-Statische Code Analyse
+
+Übung
+========================================================
+- Überprüft euren Code
+- Versteht ihr die Rückmeldungen von lintr?
+
+
+Auto-Style mit dem "styler" Paket
 ========================================================
 
+```r
+styler::style_file("ugly_code.R")
+```
 
-lintr
+
+Übung
+========================================================
+- Verpasst eurem Code einen freshen Style
+- Nutzt dazu ebenfalls das styler-Addin
+
+
+R Markdown
 ========================================================
 
 
