@@ -128,9 +128,8 @@ R Markdown Basics
 ========================================================
 Ergänzt das soeben erstellte R Markdown Dokument um:
 - eine Überschrift Größe 2
-- eine kurze Beschreibung eures Code-Abschnitts  
-  (oder eines Ausschnitts)
-- einem Ausschnitt eures R Codes
+- eine kurze Beschreibung eines Ausschnitts eures R Codes
+- einen Ausschnitt eures R Codes
 
 
 Tipp
